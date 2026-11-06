@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora | Explore Arizona</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/loadHeader.js"></script>
+    <script src="scripts/flora.js" defer></script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <main class="flora-body">
+        <h1 class="child-page-title">Flora</h1>
+        <section class="info">
+
+            <form>
+                <input type="text" id="search-bar" placeholder="Search">
+                <button type="submit" id="search-button">
+                    <img src="styles/images/search.svg" alt="search icon">
+                </button>
+            </form>
+        <div id="tag-filters">
+            <select aria-label="region" id="region-select">
+                <option value="">Choose a region:</option>
+                <option value="south">South</option>
+                <option value="central">Central</option>
+                <option value="north">North</option>
+            </select>
+            <select aria-label="flora type" id="type-select">
+                <option value="">Choose a flora type:</option>
+                <option value="trees">Trees</option>
+                <option value="shrubs">Shrubs</option>
+                <option value="grasses">Grasses</option>
+                <option value="wildflowers">Wildflowers</option>
+                <!-- <option value="cacti">Cacti</option>
+                <option value="weeds">Invasive Weeds</option> -->
+            </select>
+        </div>
+        <button type="button" id="clear-button">Clear</button>
+ 
+        <div id="flora-container"></div>
+
+            </div>
+        </section>
+    </main>    
+    <footer>    
+        <p>Explore Arizona &copy; 2026 - Connor Searle</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/x-icon.png" alt="x icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
